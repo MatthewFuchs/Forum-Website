@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/create-post.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="create-post.html">New Post</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <form class="search">
+            <input type="search" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1>Create New Post</h1>
+    <form id="create-post-form" action="#" method="post">
+        <div class="form-group">
+            <label for="postTitle">Post Title</label>
+            <input type="text" id="postTitle" name="postTitle" required>
+        </div>
+        <div class="form-group">
+            <label for="postCategory">Category</label>
+            <select id="postCategory" name="postCategory">
+                <option value="webDev">Web Development</option>
+                <option value="softwareEng">Software Engineering</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <!-- Additional categories as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="postContent">Content</label>
+            <textarea id="postContent" name="postContent" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="submit-post-btn">Submit Post</button>
+    </form>
+</main>
+
+<footer>
+    <div class="container">
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

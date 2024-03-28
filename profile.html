@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="create-post.html">New Post</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <form class="search">
+                <input type="search" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1>User Profile</h1>
+    <form id="profile-form" action="#" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="profilePicture" class="custom-file-upload">Choose File</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+            <span id="file-chosen">No file chosen</span>
+        </div>        
+        <div class="form-group">
+            <label for="userName">Name</label>
+            <input type="text" id="userName" name="userName" required>
+        </div>
+        <div class="form-group">
+            <label for="userEmail">Email</label>
+            <input type="email" id="userEmail" name="userEmail" required>
+        </div>
+        <div class="form-group">
+            <label for="newPassword">New Password</label>
+            <input type="password" id="newPassword" name="newPassword">
+        </div>
+        <div class="form-group">
+            <label>Email Notifications</label>
+            <div>
+                <input type="checkbox" id="emailMessages" name="emailNotifications" value="messages">
+                <label for="emailMessages">Messages</label>
+            </div>
+            <div>
+                <input type="checkbox" id="emailMentions" name="emailNotifications" value="mentions">
+                <label for="emailMentions">Mentions</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="userBio">Bio</label>
+            <textarea id="userBio" name="userBio" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="userLocation">Location</label>
+            <input type="text" id="userLocation" name="userLocation">
+        </div>
+        <div class="form-group">
+            <label for="userInterests">Interests</label>
+            <input type="text" id="userInterests" name="userInterests">
+        </div>
+        <button type="submit" class="btn">Update Profile</button>
+    </form>
+</main>
+
+<footer>
+    <div class="container">
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
