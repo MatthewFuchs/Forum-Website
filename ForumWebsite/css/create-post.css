@@ -1,0 +1,66 @@
+/* Styling specific to the Create Post form */
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Text and Textarea Styling */
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect the overall width */
+}
+
+/* Dropdown Menu Styling */
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    -webkit-appearance: none; /* Removes default Chrome and Safari style */
+    -moz-appearance: none; /* Removes default Firefox style*/
+    appearance: none; /* Removes default style for future browsers */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"><path d="M7.646 14.854a.5.5 0 0 1-.708 0L.146 8.354a.5.5 0 0 1 0-.708l.647-.646a.5.5 0 0 1 .708 0L7 12.293l5.5-5.293a.5.5 0 0 1 .707 0l.647.646a.5.5 0 0 1 0 .708l-6.792 6.5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    cursor: pointer;
+}
+
+/* Focus Styles for Inputs, Textareas, and Selects */
+.form-group input[type="text"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, .25);
+}
+
+/* Submit Button Styling for Create Post Page */
+.submit-post-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Submit Button */
+.submit-post-btn:hover {
+    background-color: #0056b3;
+}

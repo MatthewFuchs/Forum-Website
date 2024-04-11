@@ -1,0 +1,66 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Link styles */
+a {
+    color: #123572;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Category styles */
+.category {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Adds a subtle border */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #f9f9f9; /* Light background on hover */
+    border-color: #ccc; /* Darker border on hover */
+}
+
+.category h3 a {
+    font-size: 1.2em;
+    color: #0056b3; /* Make category titles stand out */
+}
+
+.category p {
+    color: #666; /* Subdued text color for descriptions */
+}
+
+/* Popular Tags and Recent Posts list styles */
+#popular-tags ul, #recent-posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#popular-tags li a, #recent-posts li a {
+    padding: 5px 0; /* Adds vertical padding for easier clickability */
+    display: block; /* Ensures the padding affects click area */
+}
+
+/* Hover effect for tag and post links */
+#popular-tags li a:hover, #recent-posts li a:hover {
+    background-color: #eef; /* Adds a subtle background color on hover */
+    border-radius: 4px; /* Rounded corners for the hover background */
+}

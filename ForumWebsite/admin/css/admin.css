@@ -1,0 +1,60 @@
+/* General body and font styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background for the dashboard */
+    color: #333; /* Dark gray text for better readability */
+}
+
+/* Header styles */
+header {
+    background-color: #333; /* Blue color for header background */
+    color: white;
+    padding: 10px 20px; /* Padding around content inside header */
+    text-align: center; /* Center the header content */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none; /* Remove bullet points from list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center navigation items */
+}
+
+nav ul li {
+    display: inline; /* Display list items in a row */
+    margin-right: 10px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: white; /* Text color for links */
+    text-decoration: none; /* No underline for links */
+    font-weight: bold; /* Make font bold */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover for better interactivity */
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+    text-align: center; /* Center the text in the main area */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Darker background for footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0; /* Keep the footer at the bottom */
+}

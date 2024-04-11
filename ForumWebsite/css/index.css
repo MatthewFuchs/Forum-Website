@@ -1,0 +1,143 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* Adjusted for items on the edges */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Assuming nav is used exclusively for the middle links */
+header nav {
+    flex-grow: 1; /* Allows the nav to fill the space */
+    display: flex;
+    justify-content: center; /* Center the nav content */
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* Evenly spaces the nav items */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensures the nav takes up the full width of its container */
+    max-width: 600px; /* Adjust this based on your preference */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px; /* Adds horizontal padding to each link */
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #a1c5ff;
+    text-decoration: underline;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+}
+
+.search input[type="search"], .search button {
+    padding: 5px 10px;
+}
+
+.search input[type="search"] {
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+
+.search button {
+    background-color: #fff;
+    color: #333;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #a1c5ff;
+    color: white;
+}
+
+main {
+    margin: 20px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.post {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center; /* Center footer content */
+    align-items: center; /* Vertically align items for aesthetic balance */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Space between footer links */
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #a1c5ff; /* Light blue hover effect */
+    text-decoration: underline;
+}
+
+/* Additional footer adjustments for responsiveness and aesthetics */
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column; /* Stack footer content vertically on smaller screens */
+    }
+    
+    footer ul {
+        justify-content: center; /* Center-align the list for a polished look on all screen sizes */
+    }
+}
+
